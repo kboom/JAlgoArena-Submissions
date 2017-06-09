@@ -28,6 +28,10 @@ repositories {
     mavenCentral()
 }
 
+bootRun {
+    systemProperty 'server.port', Integer.getInteger('server.port', 5003)
+}
+
 jar {
     baseName = 'jalgoarena-submissions'
 }
